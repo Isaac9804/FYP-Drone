@@ -21,3 +21,54 @@
 ## Apriltag
 `Apriltag_ros Package` can be downloaded from the [AprilTag Official Website](https://github.com/AprilRobotics/apriltag_ros)
 
+### Setup
+`This is required` if you download directly from the [AprilTag Official Website](https://github.com/AprilRobotics/apriltag_ros) but if you downloaded from this repository you can skip to no.3
+
+1.Placing the tag id in the [tags.yaml](https://github.com/Isaac9804/FYP-Drone/blob/aa2f3e5a3a2799efdec1f08c26a21d8d6e49e7c4/apriltagros_catkin/src/apriltag_ros/apriltag_ros/config/tags.yaml)
+ file located:
+```bash
+cd ~/FYP-Drone/apriltagros_catkin/src/apriltag_ros/apriltag_ros/config
+nano tags.yaml
+```
+```yaml
+
+# Adding code below to the tags.yaml file
+# Line 20
+standalone_tags:
+  [
+     {id: 0 , size: 0.157},
+     {id: 1 , size: 0.157},
+     {id: 2 , size: 0.157},
+     {id: 3 , size: 0.157},
+     {id: 4 , size: 0.157},
+     {id: 5 , size: 0.157},
+     {id: 6 , size: 0.157},
+     {id: 7 , size: 0.157},
+     {id: 8 , size: 0.157},
+     {id: 9 , size: 0.157},
+     {id: 10 , size: 0.157},
+     {id: 11 , size: 0.157},
+     {id: 12 , size: 0.157},
+     {id: 13 , size: 0.157},
+     {id: 14 , size: 0.157},
+     {id: 15 , size: 0.157},
+     {id: 16 , size: 0.157},
+
+  ]
+  ```
+2. Adding [cv_ros.py]() and [camera_info.py]() into the src file
+
+```bash
+cd ~/FYP-Drone/apriltagros_catkin/src/apriltag_ros/apriltag_ros/src
+nano cv_ros.py       # Paste the code from cv_ros.py into here
+nano camera_info.py  # Paste the code from camera_info.py into here
+```
+3.Configuring the [continuous_detection.launch](https://github.com/Isaac9804/FYP-Drone/blob/aa2f3e5a3a2799efdec1f08c26a21d8d6e49e7c4/apriltagros_catkin/src/apriltag_ros/apriltag_ros/launch/continuous_detection.launch) file will allow to us to execute the `cv_ros.py` and `camera_info.py` simultaneously.
+
+```bash
+cd ~/FYP-Drone/apriltagros_catkin/src/apriltag_ros/apriltag_ros/launch
+nano continous_detection.launch        # Paste the code below into the continuous_detection.launch file and save
+```
+
+
+
