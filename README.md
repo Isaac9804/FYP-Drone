@@ -48,7 +48,7 @@ P = [637.381103515625, 0.0, 344.65598463501374, 0.0, 0.0, 639.443359375, 259.461
 None
 ```
 
-<img src="Images/calibration-test.png" width=60>
+<img src="Images/calibration-test.png" width=200>
 
 
 ## Apriltag
