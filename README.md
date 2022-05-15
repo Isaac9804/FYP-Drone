@@ -16,12 +16,12 @@
 * Ubuntu Mate 20.04 64-bit : [Ubuntu Mate Download](https://ubuntu-mate.org/download/)
 * ROS Noetic : [Noetic for Ubuntu Download](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
----
+
 ## Camera Calibration
 
 
 
----
+
 ## Apriltag
 `Apriltag_ros Package` can be downloaded from the [AprilTag Official Website](https://github.com/AprilRobotics/apriltag_ros)
 
@@ -99,10 +99,11 @@ catkin_make_isolated
 source ~/FYP-Drone/apriltagros_catkin/devel_isolated/setup.bash
 roslaunch apriltag_ros continuous_detection.launch
 ```
-6.To view the image_detection : [Tag for testing](https://ardupilot.org/dev/_images/ros-apriltag-board.png)
+6.To view the image_detection : [Tag for testing](https://github.com/Isaac9804/FYP-Drone/blob/ba25caf635169bb35377c764af463dce2361df72/Images/ros-apriltag-board.png)
 ```bash
 rqt_image_view    # Place a printed out tag and the id will be displayed.
 ```
 Preview Image of testing:
 
-<img src="Picture.png" >
+<img src="Images/AprilTag_detectionTest.png" >
+<img src="Images/ros-apriltag-board.png" >
