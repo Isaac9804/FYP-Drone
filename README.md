@@ -1,6 +1,6 @@
 # FYP-Drone
 
-## Info
+## Hardware information
 ### Computer
 * `Illegear onyx v ryzen` : [Illegear Website](https://www.illegear.com/staging/ms/onyx-series/30-onyx-v-ryzen.html#/peripherals-63wh_battery_pack_upgrade/laptop_display-15_6_120hz_full_hd_anti_glare_ips_infinivision_display/1st_m_2_solid_state_drive-500gb_m_2_pcie_nvme_solid_state_drive/operating_system-windows_10_free_trial_edition_no_license_key/laptop_warranty-2_year_carry_in_warranty_lifetime_technical_support/laptop_processor-amd_ryzen_5_4600h_processor_6_cores_12_threads_3_0ghz_to_4_0ghz/laptop_graphics_card-nvidia_geforce_gtx_1650_4gb_gddr6_with_optimus/thermal_cooling-stock_standard_thermal_compound/laptop_ram-8gb_ddr4_ram_3200mhz_1_x_8gb/2nd_m_2_solid_state_drive-none/wireless_network_card-intel_wi_fi_6_ax200_2x2_m_2_wlan_bluetooth_5_1_combo)
 
@@ -17,12 +17,16 @@
 * ROS Noetic : [Noetic for Ubuntu Download](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
 ---
+## Camera Calibration
 
+
+
+---
 ## Apriltag
 `Apriltag_ros Package` can be downloaded from the [AprilTag Official Website](https://github.com/AprilRobotics/apriltag_ros)
 
 ### Setup
-`This is required` if you download directly from the [AprilTag Official Website](https://github.com/AprilRobotics/apriltag_ros) but if you downloaded from this repository you can skip to no.3
+`This is required` if you download directly from the [AprilTag Official Website](https://github.com/AprilRobotics/apriltag_ros) but if you downloaded from this repository you can skip to no.5
 
 1.Placing the tag id in the [tags.yaml](https://github.com/Isaac9804/FYP-Drone/blob/aa2f3e5a3a2799efdec1f08c26a21d8d6e49e7c4/apriltagros_catkin/src/apriltag_ros/apriltag_ros/config/tags.yaml)
  file located:
@@ -34,6 +38,7 @@ nano tags.yaml
 
 # Adding code below to the tags.yaml file
 # Line 20
+
 standalone_tags:
   [
      {id: 0 , size: 0.157},
@@ -67,19 +72,37 @@ nano camera_info.py  # Paste the code from camera_info.py into here
 
 ```bash
 cd ~/FYP-Drone/apriltagros_catkin/src/apriltag_ros/apriltag_ros/launch
-nano continous_detection.launch        # Paste the code below into the continuous_detection.launch file and save
+nano continous_detection.launch        # Paste the code below into the continuous_detection.launch file
+```
+```xml
+<!-- Add this to line 19 of the continuous_detection.launch file -->
+
+<node name="camera" pkg="apriltag_ros" type="cv_ros.py" />
+<node name="info" pkg="apriltag_ros" type="camera_info.py" />
 ```
 
-Starting with a working ROS installation (Kinetic and Melodic are supported):
+4.Adding [usb_cam.launch](https://github.com/Isaac9804/FYP-Drone/blob/aa2f3e5a3a2799efdec1f08c26a21d8d6e49e7c4/apriltagros_catkin/src/apriltag_ros/apriltag_ros/launch/usb_cam.launch) file
 ```bash
-export ROS_DISTRO=melodic               # Set this to your distro, e.g. kinetic or melodic
-source /opt/ros/$ROS_DISTRO/setup.bash  # Source your ROS distro 
-mkdir -p ~/catkin_ws/src                # Make a new workspace 
-cd ~/catkin_ws/src                      # Navigate to the source space
-git clone https://github.com/AprilRobotics/apriltag.git      # Clone Apriltag library
-git clone https://github.com/AprilRobotics/apriltag_ros.git  # Clone Apriltag ROS wrapper
-cd ~/catkin_ws                          # Navigate to the workspace
-rosdep install --from-paths src --ignore-src -r -y  # Install any missing packages
-catkin build    # Build all packages in the workspace (catkin_make_isolated will work also)
+cd ~/FYP-Drone/apriltagros_catkin/src/apriltag_ros/apriltag_ros/launch
+nano usb_cam.launch        # Paste the code from usb_cam.launch into here
 ```
 
+5.Building and launching the package
+
+```bash
+# Building the package
+cd ~/FYP-Drone/apriltagros_catkin
+source /opt/ros/noetic/setup.bash
+catkin_make_isolated
+
+#Launching the package
+source ~/FYP-Drone/apriltagros_catkin/devel_isolated/setup.bash
+roslaunch apriltag_ros continuous_detection.launch
+```
+6.To view the image_detection : [Tag for testing](https://ardupilot.org/dev/_images/ros-apriltag-board.png)
+```bash
+rqt_image_view    # Place a printed out tag and the id will be displayed.
+```
+Preview Image of testing:
+
+<img src="Picture.png" >
