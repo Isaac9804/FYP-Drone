@@ -21,23 +21,25 @@
 `Usb Camera Package` can be downloaded from the [Usb_cam for ROS](http://wiki.ros.org/usb_cam)
 
 ### Setup
-`This is required` if you download directly from the [Usb_cam for ROS](http://wiki.ros.org/usb_cam) but if you downloaded from this repository you can skip to no.5
+`This is required` if you download directly from the [Usb_cam for ROS](http://wiki.ros.org/usb_cam) but if you downloaded from this repository you can skip it to the calibration step.
 
-1.
+1.Building the packages
 ```bash
 cd ~/FYP-Drone/usbcam_catkin/
 catkin_make
 ```
+2.Running the File
 ```bash
 source ~/FYP-Drone/usbcam_catkin/devel/setup.bash
+# Calibration of camera
 roslaunch usb_cam usb_cam-test.launch
 rosrun camera_calibration cameracalibrator.py  --size 8x6 --square 0.020 image:=/usb_cam/image_raw camera:=/usb_cam
 ```
-Download the [calibration image]() on a paper and measure the length of the square where the value in `--square 0.020` can be change. It is in meters.
-As seen in the Image below press the calibration button once it lights up and transfer the matrices to the [cv_ros.py](https://github.com/Isaac9804/FYP-Drone/blob/318a1ce0a790f17f3d5b52031def250ffc440f3c/apriltagros_catkin/src/apriltag_ros/apriltag_ros/src/cv_ros.py).
+Download the [calibration image](https://github.com/Isaac9804/FYP-Drone/blob/9e3d2e10979b4088d7b0b312a1ba2a5b7ff2fd4a/Images/calibration_image.jpg) on a paper and measure the length of the square where the value in `--square 0.020` can be change. It is in meters.
+As seen in the Image below press the calibration button once it lights up and transfer the matrices to the [camera_info.py](https://github.com/Isaac9804/FYP-Drone/blob/318a1ce0a790f17f3d5b52031def250ffc440f3c/apriltagros_catkin/src/apriltag_ros/apriltag_ros/src/camera_info.py).
 
 ```python
-# Adding the matrices in the cv_ros.py
+# Adding the matrices in the camera_info.py
 
 **** Calibrating ****
 mono pinhole calibration...
