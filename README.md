@@ -21,7 +21,7 @@
 `Usb Camera Package` can be downloaded from the [Usb_cam for ROS](http://wiki.ros.org/usb_cam)
 
 ### Setup
-`This is required` if you download directly from the [Usb_cam for ROS](http://wiki.ros.org/usb_cam) but if you downloaded from this repository you can skip it to the calibration step.
+`This is required` if you download directly from the [Usb_cam for ROS](https://github.com/ros-drivers/usb_cam.git) but if you downloaded from this repository you can skip it to the calibration step.
 
 1.Building the packages
 ```bash
