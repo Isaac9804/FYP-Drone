@@ -18,8 +18,37 @@
 
 
 ## Camera Calibration
+`Usb Camera Package` can be downloaded from the [Usb_cam for ROS](http://wiki.ros.org/usb_cam)
 
+### Setup
+`This is required` if you download directly from the [Usb_cam for ROS](http://wiki.ros.org/usb_cam) but if you downloaded from this repository you can skip to no.5
 
+1.
+```bash
+cd ~/FYP-Drone/usbcam_catkin/
+catkin_make
+```
+```bash
+source ~/FYP-Drone/usbcam_catkin/devel/setup.bash
+roslaunch usb_cam usb_cam-test.launch
+rosrun camera_calibration cameracalibrator.py  --size 8x6 --square 0.020 image:=/usb_cam/image_raw camera:=/usb_cam
+```
+Download the [calibration image]() on a paper and measure the length of the square where the value in `--square 0.020` can be change. It is in meters.
+As seen in the Image below press the calibration button once it lights up and transfer the matrices to the [cv_ros.py](https://github.com/Isaac9804/FYP-Drone/blob/318a1ce0a790f17f3d5b52031def250ffc440f3c/apriltagros_catkin/src/apriltag_ros/apriltag_ros/src/cv_ros.py).
+
+```python
+# Adding the matrices in the cv_ros.py
+
+**** Calibrating ****
+mono pinhole calibration...
+D = [-0.0190621325592505, -0.0029465309974415974, 0.0027152426574913987, 0.005488042343009642, 0.0]
+K = [642.1513642603192, 0.0, 342.1977688481531, 0.0, 641.799293962172, 259.010269392028, 0.0, 0.0, 1.0]
+R = [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+P = [637.381103515625, 0.0, 344.65598463501374, 0.0, 0.0, 639.443359375, 259.4618461691425, 0.0, 0.0, 0.0, 1.0, 0.0]
+None
+```
+
+<img src="Images/calibration-test.png">
 
 
 ## Apriltag
@@ -61,7 +90,7 @@ standalone_tags:
 
   ]
   ```
-2. Adding [cv_ros.py]() and [camera_info.py]() into the src file
+2. Adding [cv_ros.py](https://github.com/Isaac9804/FYP-Drone/blob/318a1ce0a790f17f3d5b52031def250ffc440f3c/apriltagros_catkin/src/apriltag_ros/apriltag_ros/src/cv_ros.py) and [camera_info.py](https://github.com/Isaac9804/FYP-Drone/blob/318a1ce0a790f17f3d5b52031def250ffc440f3c/apriltagros_catkin/src/apriltag_ros/apriltag_ros/src/camera_info.py) into the src file
 
 ```bash
 cd ~/FYP-Drone/apriltagros_catkin/src/apriltag_ros/apriltag_ros/src
@@ -106,4 +135,3 @@ rqt_image_view    # Place a printed out tag and the id will be displayed.
 Preview Image of testing:
 
 <img src="Images/AprilTag_detectionTest.png" >
-<img src="Images/ros-apriltag-board.png" >
