@@ -70,5 +70,16 @@ cd ~/FYP-Drone/apriltagros_catkin/src/apriltag_ros/apriltag_ros/launch
 nano continous_detection.launch        # Paste the code below into the continuous_detection.launch file and save
 ```
 
-
+Starting with a working ROS installation (Kinetic and Melodic are supported):
+```bash
+export ROS_DISTRO=melodic               # Set this to your distro, e.g. kinetic or melodic
+source /opt/ros/$ROS_DISTRO/setup.bash  # Source your ROS distro 
+mkdir -p ~/catkin_ws/src                # Make a new workspace 
+cd ~/catkin_ws/src                      # Navigate to the source space
+git clone https://github.com/AprilRobotics/apriltag.git      # Clone Apriltag library
+git clone https://github.com/AprilRobotics/apriltag_ros.git  # Clone Apriltag ROS wrapper
+cd ~/catkin_ws                          # Navigate to the workspace
+rosdep install --from-paths src --ignore-src -r -y  # Install any missing packages
+catkin build    # Build all packages in the workspace (catkin_make_isolated will work also)
+```
 
