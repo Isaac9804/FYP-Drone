@@ -137,6 +137,3 @@ rqt_image_view    # Place a printed out tag and the id will be displayed.
 Preview Image of testing:
 
 <img src="Images/AprilTag_detectionTest.png" >
-hasgfhiasgfids
-ashidfihgsdhf
-asdhifihsafhidsfhi
