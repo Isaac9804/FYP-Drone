@@ -24,6 +24,13 @@
 * ESC
 * Brushless Motor
 
+```bash
+# To remove git from file, first go to the directory
+rm -rf .git
+# To check status
+git status     # It should show "fatal: not a git repository (or any of the parent directories): .git"
+```
+
 ## Sourcing bash file
 ```bash
 nano /.bashrc
