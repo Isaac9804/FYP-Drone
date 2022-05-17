@@ -1,0 +1,6 @@
+Symlinking /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/share/mavros_extras/cmake/mavros_extrasConfig.cmake
+Symlinking /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake
+Symlinking /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/libmavros_extras.so
+Symlinking /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/pkgconfig/mavros_extras.pc
+Symlinking /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/mavros_extras/servo_state_publisher
+Symlinking /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/mavros_extras/visualization

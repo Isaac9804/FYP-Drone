@@ -1,0 +1,6 @@
+devel_space: /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel
+install: false
+install_space: /home/izzat/Desktop/FYP-Drone/mavros_catkin/install
+profile: default
+source_space: /home/izzat/Desktop/FYP-Drone/mavros_catkin/src
+workspace: /home/izzat/Desktop/FYP-Drone/mavros_catkin

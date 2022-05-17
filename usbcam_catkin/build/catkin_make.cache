@@ -1,0 +1,2 @@
+usb_cam
+-DCATKIN_DEVEL_PREFIX=/home/izzat/Desktop/FYP-Drone/usbcam_catkin/devel -DCMAKE_INSTALL_PREFIX=/home/izzat/Desktop/FYP-Drone/usbcam_catkin/install -G Unix Makefiles

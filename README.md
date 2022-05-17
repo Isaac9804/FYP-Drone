@@ -23,6 +23,17 @@
 * Battery
 * ESC
 * Brushless Motor
+
+## Sourcing bash file
+```bash
+nano /.bashrc
+
+# type the source folder in the bash script
+source /opt/ros/noetic/setup.bash
+source ~/FYP-Drone/usbcam_catkin/devel/setup.bash
+source ~/FYP-Drone/mavros_catkin/devel/setup.bash
+source ~/FYP-Drone/apriltagros_catkin/devel_isolated/setup.bash
+```
 ## Camera Calibration
 `Usb Camera Package` can be downloaded from the [Usb_cam for ROS](http://wiki.ros.org/usb_cam)
 
@@ -136,6 +147,8 @@ catkin_make_isolated
 
 #Launching the package
 source ~/FYP-Drone/apriltagros_catkin/devel_isolated/setup.bash
+chmod +x cv_ros.py
+chmod +x camera_info.py
 roslaunch apriltag_ros continuous_detection.launch
 ```
 6.To view the image_detection : [Tag for testing](https://github.com/Isaac9804/FYP-Drone/blob/ba25caf635169bb35377c764af463dce2361df72/Images/ros-apriltag-board.png)
@@ -161,10 +174,11 @@ Preview Image of testing:
 ls /dev
  -- list will show ttyACM0 --
 
-# Provide access for the pixhawk port
+# Provide access for the pixhawk port (https://askubuntu.com/questions/210177/serial-port-terminal-cannot-open-dev-ttys0-permission-denied)
 sudo chmod 666 /dev/ttyACM0
 
 # Run the px4.launch file
+source ~/FYP-Drone/mavros_catkin/devel/setup.bash
 roslaunch mavros px4.launch
 ```
 4.Code to fly the drone [here](https://github.com/aniskoubaa/ros_dronemap)
