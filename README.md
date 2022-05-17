@@ -162,7 +162,7 @@ ls /dev
  -- list will show ttyACM0 --
 
 # Provide access for the pixhawk port
-sudo chmod 666 ttyACM0
+sudo chmod 666 /dev/ttyACM0
 
 # Run the px4.launch file
 roslaunch mavros px4.launch
