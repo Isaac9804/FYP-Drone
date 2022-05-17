@@ -17,7 +17,12 @@
 * Ubuntu Mate 20.04 64-bit : [Download Here](https://ubuntu-mate.org/download/)
 * ROS Noetic : [Download Here](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
-
+### Drone 
+* Drone Frame
+* Pixhawk
+* Battery
+* ESC
+* Brushless Motor
 ## Camera Calibration
 `Usb Camera Package` can be downloaded from the [Usb_cam for ROS](http://wiki.ros.org/usb_cam)
 
@@ -139,4 +144,27 @@ rqt_image_view    # Place a printed out tag and the id will be displayed.
 ```
 Preview Image of testing:
 
-<img src="Images/AprilTag_detectionTest.png" >
+<img src="Images/AprilTag_detectionTest.png" ></p>
+
+# MAVROS
+
+## Installation of MAVROS for Pixhawk
+
+1.Installing [Mavros Packages Here](https://docs.px4.io/v1.12/en/ros/mavros_installation.html)
+
+2.When building the mavros packages it requires catkin_tools and if the build installation cannot be done download the [catkin_tools here](https://catkin-tools.readthedocs.io/en/latest/installing.html)
+
+3.After the build is initialised, connect the pixhawk with the computer/raspberry pi through usb data transfer cable. 
+
+```bash
+# Check if the pixhawk is connected to the raspberry pi
+ls /dev
+ -- list will show ttyACM0 --
+
+# Provide access for the pixhawk port
+sudo chmod 666 ttyACM0
+
+# Run the px4.launch file
+roslaunch mavros px4.launch
+```
+4.Code to fly the drone [here](https://github.com/aniskoubaa/ros_dronemap)
