@@ -1,7 +1,0 @@
-mavros/test_mavros
-/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/test_mavros/cmake.lock /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/./cmake.lock
-/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/test_mavros/share/test_mavros/cmake/test_mavrosConfig.cmake /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/share/test_mavros/cmake/test_mavrosConfig.cmake
-/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/test_mavros/share/test_mavros/cmake/test_mavrosConfig-version.cmake /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/share/test_mavros/cmake/test_mavrosConfig-version.cmake
-/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/test_mavros/lib/libmavros_sitl_test.so /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/libmavros_sitl_test.so
-/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/test_mavros/lib/test_mavros/sitl_test_node /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/test_mavros/sitl_test_node
-/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/test_mavros/lib/pkgconfig/test_mavros.pc /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/pkgconfig/test_mavros.pc

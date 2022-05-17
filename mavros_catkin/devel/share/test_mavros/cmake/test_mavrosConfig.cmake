@@ -1,1 +1,0 @@
-/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/test_mavros/share/test_mavros/cmake/test_mavrosConfig.cmake

@@ -1,1 +1,0 @@
-set(ORDERED_PATHS "/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/mavros/lib;/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/libmavconn/lib;/opt/ros/noetic/lib")
