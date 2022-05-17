@@ -1,0 +1,5 @@
+Symlinking /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/share/test_mavros/cmake/test_mavrosConfig.cmake
+Symlinking /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/share/test_mavros/cmake/test_mavrosConfig-version.cmake
+Symlinking /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/libmavros_sitl_test.so
+Symlinking /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/test_mavros/sitl_test_node
+Symlinking /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/pkgconfig/test_mavros.pc

@@ -1,0 +1,8 @@
+mavros/mavros_extras
+/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/mavros_extras/cmake.lock /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/./cmake.lock
+/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig.cmake /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/share/mavros_extras/cmake/mavros_extrasConfig.cmake
+/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake
+/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/mavros_extras/lib/libmavros_extras.so /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/libmavros_extras.so
+/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/mavros_extras/lib/pkgconfig/mavros_extras.pc /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/pkgconfig/mavros_extras.pc
+/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/mavros_extras/lib/mavros_extras/servo_state_publisher /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/mavros_extras/servo_state_publisher
+/home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/.private/mavros_extras/lib/mavros_extras/visualization /home/izzat/Desktop/FYP-Drone/mavros_catkin/devel/lib/mavros_extras/visualization
