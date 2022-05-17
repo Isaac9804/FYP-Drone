@@ -171,6 +171,8 @@ Preview Image of testing:
 
 ```bash
 # Check if the pixhawk is connected to the raspberry pi
+cd ~/FYP-Drone/mavros_catkin
+catkin build
 ls /dev
  -- list will show ttyACM0 --
 
