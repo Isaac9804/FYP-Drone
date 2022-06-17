@@ -39,6 +39,7 @@ nano /.bashrc
 source /opt/ros/noetic/setup.bash
 source ~/FYP-Drone/usbcam_catkin/devel/setup.bash
 source ~/FYP-Drone/mavros_catkin/devel/setup.bash
+source ~/FYP-Drone/tfmini_catkin/devel/setup.bash
 source ~/FYP-Drone/apriltagros_catkin/devel_isolated/setup.bash
 ```
 ## Camera Calibration
@@ -165,6 +166,13 @@ rqt_image_view    # Place a printed out tag and the id will be displayed.
 Preview Image of testing:
 
 <img src="Images/AprilTag_detectionTest.png" ></p>
+
+# Rangefinder LIDAR
+
+## Connection of Rangefinder to USB
+
+1.Preview of the rangefinder detection to TTL USB: [rangefinder usb connection](https://github.com/Isaac9804/FYP-Drone/blob/0843f1d0b4b7df7d554f01464a4eeb1744947151/Images/RangefinderUSB.jpg)
+
 
 # MAVROS
 
