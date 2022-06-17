@@ -23,6 +23,7 @@
 * Battery
 * ESC
 * Brushless Motor
+* TF02 PRO Rangefinder LiDAR (40m)
 
 ```bash
 # To remove git from file, first go to the directory
@@ -165,14 +166,46 @@ rqt_image_view    # Place a printed out tag and the id will be displayed.
 ```
 Preview Image of testing:
 
-<img src="Images/AprilTag_detectionTest.png" ></p>
+<img src="Images/AprilTag_detectionTest.png" >
 
 # Rangefinder LIDAR
 
 ## Connection of Rangefinder to USB
+You can download the [tfmini_ros package here](https://github.com/TFmini/TFmini-ROS)
 
-1.Preview of the rangefinder detection to TTL USB: [rangefinder usb connection](https://github.com/Isaac9804/FYP-Drone/blob/0843f1d0b4b7df7d554f01464a4eeb1744947151/Images/RangefinderUSB.jpg)
+1.Preview of the rangefinder detection to TTL USB:
+<img src="Images/RangefinderUSB.jpg">
 
+2.Build the tfmini_ros package and run the launch file
+```bash
+# Building the tfmini_ros package;
+cd ~/FYP-Drone/tfmini_catkin
+catkin_make
+
+# To run the launch file;
+sudo chmod 666 /dev/ttyUSB0
+roslaunch tfmini_ros tfmini.launch
+
+# To check the rostopic we can echo the message;
+rostopic echo /tfmini_ros_node/TFmini 
+```
+```bash
+# The output of the topic echo;
+---
+header: 
+  seq: 2624
+  stamp: 
+    secs: 1655493218
+    nsecs: 209856989
+  frame_id: "TFmini"
+radiation_type: 1
+field_of_view: 0.03999999910593033
+min_range: 0.30000001192092896
+max_range: 12.0
+range: 0.7599999904632568
+---
+
+```
 
 # MAVROS
 
