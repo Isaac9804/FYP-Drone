@@ -1,8 +1,8 @@
-prefix=/home/izzat/tfmini_catkin/devel
+prefix=/home/izzat/github/lidar_catkin/devel
 
 Name: tfmini_ros
 Description: Description of tfmini_ros
 Version: 0.0.1
-Cflags: -I/home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros/include
+Cflags: -I/home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros/include
 Libs: -L${prefix}/lib 
 Requires: 

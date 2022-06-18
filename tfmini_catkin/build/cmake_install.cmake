@@ -1,8 +1,8 @@
-# Install script for directory: /home/izzat/tfmini_catkin/src
+# Install script for directory: /home/izzat/github/lidar_catkin/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/izzat/tfmini_catkin/install")
+  set(CMAKE_INSTALL_PREFIX "/home/izzat/github/lidar_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,89 +49,89 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/izzat/tfmini_catkin/install/_setup_util.py")
+   "/home/izzat/github/lidar_catkin/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/izzat/tfmini_catkin/install" TYPE PROGRAM FILES "/home/izzat/tfmini_catkin/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/izzat/github/lidar_catkin/install" TYPE PROGRAM FILES "/home/izzat/github/lidar_catkin/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/izzat/tfmini_catkin/install/env.sh")
+   "/home/izzat/github/lidar_catkin/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/izzat/tfmini_catkin/install" TYPE PROGRAM FILES "/home/izzat/tfmini_catkin/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/izzat/github/lidar_catkin/install" TYPE PROGRAM FILES "/home/izzat/github/lidar_catkin/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/izzat/tfmini_catkin/install/setup.bash;/home/izzat/tfmini_catkin/install/local_setup.bash")
+   "/home/izzat/github/lidar_catkin/install/setup.bash;/home/izzat/github/lidar_catkin/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/izzat/tfmini_catkin/install" TYPE FILE FILES
-    "/home/izzat/tfmini_catkin/build/catkin_generated/installspace/setup.bash"
-    "/home/izzat/tfmini_catkin/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/izzat/github/lidar_catkin/install" TYPE FILE FILES
+    "/home/izzat/github/lidar_catkin/build/catkin_generated/installspace/setup.bash"
+    "/home/izzat/github/lidar_catkin/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/izzat/tfmini_catkin/install/setup.sh;/home/izzat/tfmini_catkin/install/local_setup.sh")
+   "/home/izzat/github/lidar_catkin/install/setup.sh;/home/izzat/github/lidar_catkin/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/izzat/tfmini_catkin/install" TYPE FILE FILES
-    "/home/izzat/tfmini_catkin/build/catkin_generated/installspace/setup.sh"
-    "/home/izzat/tfmini_catkin/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/izzat/github/lidar_catkin/install" TYPE FILE FILES
+    "/home/izzat/github/lidar_catkin/build/catkin_generated/installspace/setup.sh"
+    "/home/izzat/github/lidar_catkin/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/izzat/tfmini_catkin/install/setup.zsh;/home/izzat/tfmini_catkin/install/local_setup.zsh")
+   "/home/izzat/github/lidar_catkin/install/setup.zsh;/home/izzat/github/lidar_catkin/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/izzat/tfmini_catkin/install" TYPE FILE FILES
-    "/home/izzat/tfmini_catkin/build/catkin_generated/installspace/setup.zsh"
-    "/home/izzat/tfmini_catkin/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/izzat/github/lidar_catkin/install" TYPE FILE FILES
+    "/home/izzat/github/lidar_catkin/build/catkin_generated/installspace/setup.zsh"
+    "/home/izzat/github/lidar_catkin/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/izzat/tfmini_catkin/install/.rosinstall")
+   "/home/izzat/github/lidar_catkin/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/izzat/tfmini_catkin/install" TYPE FILE FILES "/home/izzat/tfmini_catkin/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/izzat/github/lidar_catkin/install" TYPE FILE FILES "/home/izzat/github/lidar_catkin/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/izzat/tfmini_catkin/build/gtest/cmake_install.cmake")
-  include("/home/izzat/tfmini_catkin/build/TFmini-ROS/tfmini_ros/cmake_install.cmake")
+  include("/home/izzat/github/lidar_catkin/build/gtest/cmake_install.cmake")
+  include("/home/izzat/github/lidar_catkin/build/TFmini-ROS/tfmini_ros/cmake_install.cmake")
 
 endif()
 
@@ -143,5 +143,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/izzat/tfmini_catkin/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/izzat/github/lidar_catkin/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

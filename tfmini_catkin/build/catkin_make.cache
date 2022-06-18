@@ -1,2 +1,2 @@
 TFmini-ROS/tfmini_ros
--DCATKIN_DEVEL_PREFIX=/home/izzat/tfmini_catkin/devel -DCMAKE_INSTALL_PREFIX=/home/izzat/tfmini_catkin/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/izzat/github/lidar_catkin/devel -DCMAKE_INSTALL_PREFIX=/home/izzat/github/lidar_catkin/install -G Unix Makefiles

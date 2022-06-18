@@ -67,14 +67,14 @@ set(tfmini_ros_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(tfmini_ros_SOURCE_PREFIX /home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros)
-  set(tfmini_ros_DEVEL_PREFIX /home/izzat/tfmini_catkin/devel)
+  set(tfmini_ros_SOURCE_PREFIX /home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros)
+  set(tfmini_ros_DEVEL_PREFIX /home/izzat/github/lidar_catkin/devel)
   set(tfmini_ros_INSTALL_PREFIX "")
   set(tfmini_ros_PREFIX ${tfmini_ros_DEVEL_PREFIX})
 else()
   set(tfmini_ros_SOURCE_PREFIX "")
   set(tfmini_ros_DEVEL_PREFIX "")
-  set(tfmini_ros_INSTALL_PREFIX /home/izzat/tfmini_catkin/install)
+  set(tfmini_ros_INSTALL_PREFIX /home/izzat/github/lidar_catkin/install)
   set(tfmini_ros_PREFIX ${tfmini_ros_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/izzat/tfmini_catkin/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/izzat/github/lidar_catkin/install/lib;/home/izzat/Desktop/FYP-Drone/apriltagros_catkin/devel_isolated/apriltag_ros/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -7,8 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/izzat/tfmini_catkin/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/izzat/tfmini_catkin/devel/lib:$LD_LIBRARY_PATH"
-export PWD='/home/izzat/tfmini_catkin/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/izzat/tfmini_catkin/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/izzat/tfmini_catkin/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/izzat/github/lidar_catkin/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/izzat/github/lidar_catkin/devel/lib:$LD_LIBRARY_PATH"
+export PWD='/home/izzat/github/lidar_catkin/build'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/izzat/github/lidar_catkin/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/izzat/github/lidar_catkin/src:$ROS_PACKAGE_PATH"

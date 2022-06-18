@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros/include/TFmini.h
+/home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros/include/TFmini.h
 ros/ros.h
 -
 stdio.h
@@ -30,13 +30,13 @@ string
 sensor_msgs/Range.h
 -
 
-/home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros/src/TFmini.cpp
+/home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros/src/TFmini.cpp
 TFmini.h
 -
 ros/ros.h
 -
 
-/home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros/src/TFmini_ros_node.cpp
+/home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros/src/TFmini_ros_node.cpp
 TFmini.h
 -
 

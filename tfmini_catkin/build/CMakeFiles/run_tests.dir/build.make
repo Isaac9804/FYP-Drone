@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/izzat/tfmini_catkin/src
+CMAKE_SOURCE_DIR = /home/izzat/github/lidar_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/izzat/tfmini_catkin/build
+CMAKE_BINARY_DIR = /home/izzat/github/lidar_catkin/build
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/izzat/tfmini_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/izzat/tfmini_catkin/src /home/izzat/tfmini_catkin/src /home/izzat/tfmini_catkin/build /home/izzat/tfmini_catkin/build /home/izzat/tfmini_catkin/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/izzat/github/lidar_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/izzat/github/lidar_catkin/src /home/izzat/github/lidar_catkin/src /home/izzat/github/lidar_catkin/build /home/izzat/github/lidar_catkin/build /home/izzat/github/lidar_catkin/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

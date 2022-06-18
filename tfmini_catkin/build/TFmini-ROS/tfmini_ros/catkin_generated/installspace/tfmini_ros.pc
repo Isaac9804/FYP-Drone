@@ -1,4 +1,4 @@
-prefix=/home/izzat/tfmini_catkin/install
+prefix=/home/izzat/github/lidar_catkin/install
 
 Name: tfmini_ros
 Description: Description of tfmini_ros

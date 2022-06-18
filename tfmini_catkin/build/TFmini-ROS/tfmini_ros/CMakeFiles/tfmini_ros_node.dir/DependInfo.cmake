@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros/src/TFmini.cpp" "/home/izzat/tfmini_catkin/build/TFmini-ROS/tfmini_ros/CMakeFiles/tfmini_ros_node.dir/src/TFmini.cpp.o"
-  "/home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros/src/TFmini_ros_node.cpp" "/home/izzat/tfmini_catkin/build/TFmini-ROS/tfmini_ros/CMakeFiles/tfmini_ros_node.dir/src/TFmini_ros_node.cpp.o"
+  "/home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros/src/TFmini.cpp" "/home/izzat/github/lidar_catkin/build/TFmini-ROS/tfmini_ros/CMakeFiles/tfmini_ros_node.dir/src/TFmini.cpp.o"
+  "/home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros/src/TFmini_ros_node.cpp" "/home/izzat/github/lidar_catkin/build/TFmini-ROS/tfmini_ros/CMakeFiles/tfmini_ros_node.dir/src/TFmini_ros_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,7 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros/include"
+  "/home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros/include"
   )
 
 # Targets to which this target links.

@@ -67,14 +67,14 @@ set(tfmini_ros_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(tfmini_ros_SOURCE_PREFIX /home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros)
-  set(tfmini_ros_DEVEL_PREFIX /home/izzat/tfmini_catkin/devel)
+  set(tfmini_ros_SOURCE_PREFIX /home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros)
+  set(tfmini_ros_DEVEL_PREFIX /home/izzat/github/lidar_catkin/devel)
   set(tfmini_ros_INSTALL_PREFIX "")
   set(tfmini_ros_PREFIX ${tfmini_ros_DEVEL_PREFIX})
 else()
   set(tfmini_ros_SOURCE_PREFIX "")
   set(tfmini_ros_DEVEL_PREFIX "")
-  set(tfmini_ros_INSTALL_PREFIX /home/izzat/tfmini_catkin/install)
+  set(tfmini_ros_INSTALL_PREFIX /home/izzat/github/lidar_catkin/install)
   set(tfmini_ros_PREFIX ${tfmini_ros_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(tfmini_ros_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros/include " STREQUAL " ")
+if(NOT "/home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros/include " STREQUAL " ")
   set(tfmini_ros_INCLUDE_DIRS "")
-  set(_include_dirs "/home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros/include")
+  set(_include_dirs "/home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros/include " STREQUAL "
         message(FATAL_ERROR "Project 'tfmini_ros' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'tfmini_ros' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/izzat/tfmini_catkin/src/TFmini-ROS/tfmini_ros/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'tfmini_ros' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/izzat/github/lidar_catkin/src/TFmini-ROS/tfmini_ros/${idir}'.  ${_report}")
     endif()
     _list_append_unique(tfmini_ros_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/izzat/tfmini_catkin/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/izzat/github/lidar_catkin/devel/lib;/home/izzat/Desktop/FYP-Drone/apriltagros_catkin/devel_isolated/apriltag_ros/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

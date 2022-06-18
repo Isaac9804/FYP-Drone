@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/izzat/tfmini_catkin/devel/lib/tfmini_ros/tfmini_ros_node"
-  "/home/izzat/tfmini_catkin/devel/lib/tfmini_ros/tfmini_ros_node.pdb"
+  "/home/izzat/github/lidar_catkin/devel/lib/tfmini_ros/tfmini_ros_node"
+  "/home/izzat/github/lidar_catkin/devel/lib/tfmini_ros/tfmini_ros_node.pdb"
   "CMakeFiles/tfmini_ros_node.dir/src/TFmini.cpp.o"
   "CMakeFiles/tfmini_ros_node.dir/src/TFmini_ros_node.cpp.o"
 )
