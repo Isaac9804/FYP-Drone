@@ -184,6 +184,7 @@ catkin_make
 
 # To run the launch file;
 sudo chmod 666 /dev/ttyUSB0
+source ~/FYP-Drone/lidar_catkin/devel/setup.bash
 roslaunch tfmini_ros tfmini.launch
 
 # To check the rostopic we can echo the message;
