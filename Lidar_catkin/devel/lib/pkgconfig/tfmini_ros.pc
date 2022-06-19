@@ -1,8 +1,0 @@
-prefix=/home/izzat/Desktop/Lidar_catkin/devel
-
-Name: tfmini_ros
-Description: Description of tfmini_ros
-Version: 0.0.1
-Cflags: -I/home/izzat/Desktop/Lidar_catkin/src/tfmini_ros/include
-Libs: -L${prefix}/lib 
-Requires: 
