@@ -1,0 +1,2 @@
+tfmini_ros
+-DCATKIN_DEVEL_PREFIX=/home/izzat/Desktop/Lidar_catkin/devel -DCMAKE_INSTALL_PREFIX=/home/izzat/Desktop/Lidar_catkin/install -G Unix Makefiles
