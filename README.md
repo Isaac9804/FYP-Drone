@@ -179,7 +179,7 @@ You can download the [tfmini_ros package here](https://github.com/TFmini/TFmini-
 2.Build the tfmini_ros package and run the launch file
 ```bash
 # Building the tfmini_ros package;
-cd ~/FYP-Drone/tfmini_catkin
+cd ~/FYP-Drone/lidar_catkin
 catkin_make
 
 # To run the launch file;
