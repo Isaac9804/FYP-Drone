@@ -40,7 +40,7 @@ nano /.bashrc
 source /opt/ros/noetic/setup.bash
 source ~/FYP-Drone/usbcam_catkin/devel/setup.bash
 source ~/FYP-Drone/mavros_catkin/devel/setup.bash
-source ~/FYP-Drone/tfmini_catkin/devel/setup.bash
+source ~/FYP-Drone/lidar_catkin/devel/setup.bash
 source ~/FYP-Drone/apriltagros_catkin/devel_isolated/setup.bash
 ```
 ## Camera Calibration
