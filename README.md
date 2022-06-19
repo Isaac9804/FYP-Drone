@@ -171,7 +171,7 @@ Preview Image of testing:
 # Rangefinder LIDAR
 
 ## Connection of Rangefinder to USB
-You can download the [tfmini_ros package here](https://github.com/TFmini/TFmini-ROS)
+You can download the [tfmini_ros package here](https://github.com/TFmini/TFmini-ROS) and if you downloaded from this repository just follow the setups below.
 
 1.Preview of the rangefinder detection to TTL USB:
 <img src="Images/RangefinderUSB.jpg">
