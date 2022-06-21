@@ -233,3 +233,5 @@ source ~/FYP-Drone/mavros_catkin/devel/setup.bash
 roslaunch mavros px4.launch
 ```
 4.Code to fly the drone [here](https://github.com/aniskoubaa/ros_dronemap)
+
+5.To change to mode of pixhawk through mavros [here](https://masoudir.github.io/mavros_tutorial/Chapter1_ArduRover_with_CLI/Step1_How_to_change_mode/#:~:text=For%20example%20if%20you%20want%20to%20change%20the%20vehicle%20mode,Change%20vehicle%20mode%20to%20"GUIDED")
