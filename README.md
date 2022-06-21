@@ -156,6 +156,7 @@ catkin_make_isolated
 
 #Launching the package
 source ~/FYP-Drone/apriltagros_catkin/devel_isolated/setup.bash
+cd ~/FYP-Drone/apriltagros_catkin/src/apriltag_ros/apriltag_ros/src/
 chmod +x cv_ros.py
 chmod +x camera_info.py
 roslaunch apriltag_ros continuous_detection.launch
